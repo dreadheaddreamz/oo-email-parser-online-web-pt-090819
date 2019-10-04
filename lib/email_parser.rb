@@ -1,13 +1,13 @@
-class EmailAddressParser
+class EmailAddressParser 
   attr_accessor :emails
   
   def initialize(emails)
-    @emails = emails
+  @emails = emails
   end
+
   def parse
-    emails.gsub!(/ , s+ /).uniq
-    emails
-end
+  emails.split(/, | /).uniq
+  end
 end
     
 

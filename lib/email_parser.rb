@@ -7,7 +7,7 @@ class EmailAddressParser
 
   def parse
   emails.gsub(/,\ s+ | '' /)
-  puts emails
+  print emails
   end
 end
     

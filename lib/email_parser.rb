@@ -5,8 +5,8 @@ class EmailAddressParser
     @emails = emails
   end
   def parse
-    emails.gsub!(/ , s+ /).uniq
-    return [emails]
+    emails.gsub!(/ , s+ /)
+    return emails.uniq
 end
 end
     

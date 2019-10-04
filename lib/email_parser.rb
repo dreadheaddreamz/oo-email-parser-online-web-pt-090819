@@ -7,7 +7,7 @@ class EmailAddressParser
 
   def parse
   emails.gsub(/,\ s+ | '' /).uniq
-  return unip
+  return uniq
   end
 end
     
